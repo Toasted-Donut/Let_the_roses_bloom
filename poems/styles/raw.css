@@ -1,0 +1,128 @@
+@font-face{
+    font-family: "Bookman";
+    src:url('D:/Web_coursework/poems/fonts/BOOKOS.ttf')
+}
+*{
+    font-family:'Bookman';
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+    width: 100%;
+}
+body{
+    background-image: url('D:/Web_coursework/poems/images/paper_texture.jpg');
+}
+header, nav, section, .content-container, footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header {
+    justify-content:space-evenly;
+    position: fixed;
+    width: 100%;
+    padding: 1em 1em;
+    background: #c0bbabdf;
+    box-shadow: 0 5px 20px 5px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+  }
+  
+header h1{
+    width: 60%;
+    text-align: center;
+}
+header a{
+    font-size: 100%;
+    
+}
+section{
+    flex-direction: column;
+    padding: 5em;
+}
+span{
+    align-self: flex-end;
+    text-align: end;
+}
+a{
+    text-decoration: none;
+    color: black;
+    transition: all 0.5s;
+}
+a:hover{
+    transform: translateY(-0.3em);
+}
+h2{
+    font-size: 7vmin;
+    padding-bottom: 0.8em;
+}
+section a, section pre, section p{
+    font-size: 4vmin;
+    
+}
+
+section p{
+   text-align:justify; 
+}
+li{
+    padding: 0.2em;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+background-color: #0000007e;
+}
+::-webkit-scrollbar-thumb {
+background: #c0bbabdf;
+border-radius: 4px;
+}
+pre{
+    padding-top: 5em;
+    padding-left: 3em;
+    padding-right: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    font-size: 4vmin;
+}
+/* для планшетов и фаблетов */
+@media (min-width: 481px) and (max-width:1000px) {
+    header{
+        flex-wrap: wrap;
+    }
+    header h1{
+        font-size: 6vmin;
+        width: 100%;
+        text-align: center;
+        order: 1;
+    }
+    header a{
+        font-size: 3vmin;
+    }
+}
+/* для мобилок */
+@media (max-width:480px) {
+    header{
+        flex-wrap: wrap;
+    }
+    header h1{
+        font-size: 6vmin;
+        width: 100%;
+        text-align: center;
+        order: 1;
+    }
+    header a{
+        font-size: 3vmin;
+    }
+    section{
+        padding-top: 8em;
+    }
+
+    
+}

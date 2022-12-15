@@ -1,0 +1,138 @@
+@font-face{
+    font-family: "Bookman";
+    src:url('D:/Web_coursework/poems/fonts/BOOKOS.ttf')
+}
+*{
+    font-family:'Bookman';
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+    width: 100%;
+}
+body{
+    
+    background-image: url('D:/Web_coursework/poems/images/paper_texture.jpg');
+}
+header, nav, section, .content-container, footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header {
+    justify-content:space-between;
+    position: fixed;
+    width: 100vw;
+    padding: 1em 1em;
+    background: #c0bbabdf;
+    box-shadow: 0 5px 20px 5px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+  }
+nav{
+    width: 40%;
+    justify-content: flex-end;
+}
+header h1{
+    font-size: 200%;
+    width: 60%;
+}
+nav a{
+    font-size: 100%;
+    padding: 0.5em;
+}
+section{
+  
+    flex-direction: column;
+    padding-top: 5em;
+    padding-bottom: 5vw;
+}
+section.chapter{
+    padding-top: 7em;
+}
+section#about_author{
+    padding-left: 2em;
+    padding-right: 2em;
+}
+img{
+    margin-top: 13vw;
+    width: 100vmin;
+}
+a{
+    text-decoration: none;
+    color: black;
+    transition: all 0.5s;
+}
+a:hover{
+    transform: translateY(-0.3em);
+}
+h2{
+    font-size: 7vmin;
+    padding-bottom: 0.8em;
+    padding-top: 1em;
+}
+section a, section pre, section p{
+    font-size: 4vmin;
+    
+}
+
+section p{
+   text-align:justify; 
+}
+section li{
+    padding: 0.2em;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+background-color: #0000007e;
+}
+::-webkit-scrollbar-thumb {
+background: #c0bbabdf;
+border-radius: 4px;
+}
+
+/* для планшетов и фаблетов */
+@media (min-width: 481px) and (max-width:1000px) {
+    header{
+        flex-direction: column;
+    }
+    header h1{
+        font-size: 6vmin;
+        width: 100%;
+        text-align: center;
+        order: -1;
+    }
+    nav{
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    nav a{
+        font-size: 3vmin;
+    }
+}
+/* для мобилок */
+@media (max-width:480px) {
+    header{
+        flex-direction: column;
+    }
+    header h1{
+        font-size: 6vmin;
+        width: 100%;
+        text-align: center;
+        order: -1;
+    }
+    nav{
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    nav a, header a{
+        font-size: 3vmin;
+    }
+   
+
+    
+}
