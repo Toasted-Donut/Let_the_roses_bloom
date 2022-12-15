@@ -15,7 +15,7 @@ html{
 body{
     display: flex;
     flex-direction: column;
-    background-image: url('D:/Web_coursework/poems/images/paper_texture.jpg');
+    background-image: url('poems/images/paper_texture.jpg');
 }
 header, nav, section, .content-container, footer {
     display: flex;
